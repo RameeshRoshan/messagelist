@@ -1,0 +1,33 @@
+.messagebox{
+    width: 100%;
+    border-radius: 5px;
+    margin: 10px auto;
+    box-shadow: 0 0 10px rgb(211, 210, 210);
+}
+.gifpreview{
+    width: 95%;
+}
+.gifdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.dpicon{
+    width: 30px;
+    height: 30px;
+    margin: 5px 5px;
+    color: rgb(170, 169, 169);
+}
+.username{
+    margin: 5px 5px;
+}
+.msgHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+}
+.messageContent{
+    margin: 15px;
+}

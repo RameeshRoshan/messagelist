@@ -2,6 +2,7 @@
     width: 100%;
     border-radius: 5px;
     margin: 10px auto;
+    padding-bottom: 10px;
     box-shadow: 0 0 10px rgb(211, 210, 210);
 }
 .gifpreview{
@@ -29,5 +30,6 @@
     margin: 10px;
 }
 .messageContent{
-    margin: 15px;
+    margin: 18px;
+    word-break: break-all;
 }

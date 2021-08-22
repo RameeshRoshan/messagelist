@@ -21,6 +21,9 @@ export default class CreatePost extends Component {
             gif:""
         }
     }
+    onCloseGif=()=>{
+        this.setState({gif: ""});
+    }
     onGifTabClick=()=>{
         this.setState({gifview: true})
     }
@@ -58,7 +61,8 @@ export default class CreatePost extends Component {
                             <textarea className="textArea" value={this.state.input} onChange={this.onchange} placeholder="What's on your mind?"/>
                         </div>
                         <div className="gifDiv">{
-                            this.state.gif? <img className="gifimg" src={this.state.gif} alt="gif" /> :<></>
+                            this.state.gif? <><img className="gifimg" src={this.state.gif} alt="gif"></img><AiFillCloseCircle onClick={this.onCloseGif} className="closegif" /></> 
+                            :<></>
                         }</div>
                         <div className="row">
                             <div className="tag"><FaUserTag className="color_skyblue icon"/> Tag Friends</div>

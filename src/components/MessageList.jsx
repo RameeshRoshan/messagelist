@@ -14,7 +14,9 @@ export default function MessageList({item}) {
                 </div>
             </div>
             <div className="messageContent">
-                <p>{item.text}</p>
+                {
+                    item.text? <p>{item.text}</p> : <></>
+                }
             </div>
             {
                 item.gif? <div className="gifdiv"><img className="gifpreview" src={item.gif} alt="gif" /></div> : <></>

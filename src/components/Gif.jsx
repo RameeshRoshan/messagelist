@@ -16,7 +16,7 @@ export default class Gif extends Component {
 
     onchange=debounce((e)=>{
         this.setState({searchfield: e.target.value});
-        fetch(`https://api.giphy.com/v1/gifs/search?&q=${this.state.searchfield}&api_key=9uIaA8YuTg6HPyX1zB5YdAiomUv9mMhk&q=&limit=25&offset=0&rating=g&lang=en`)
+        fetch(`https://api.giphy.com/v1/gifs/search?&q=${this.state.searchfield}&api_key=9uIaA8YuTg6HPyX1zB5YdAiomUv9mMhk&q=&limit=15&offset=0&rating=g&lang=en`)
         .then((response)=>{
             return response.json();
         })
@@ -29,7 +29,7 @@ export default class Gif extends Component {
     },500);
 
     componentDidMount(){
-        fetch("https://api.giphy.com/v1/gifs/trending?api_key=9uIaA8YuTg6HPyX1zB5YdAiomUv9mMhk&limit=25&rating=g")
+        fetch("https://api.giphy.com/v1/gifs/trending?api_key=9uIaA8YuTg6HPyX1zB5YdAiomUv9mMhk&limit=15&rating=g")
         .then((response)=>{
             return response.json();
         })
